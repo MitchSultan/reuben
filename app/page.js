@@ -5,7 +5,7 @@ import Footer from './components/footer';
 
 export default function page() {
   return (
-    <div>
+    <div className='p-2 '>
       <Navbar />
       <Body />
       <Footer />

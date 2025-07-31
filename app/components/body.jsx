@@ -56,10 +56,11 @@ export default function ElectricalEngineerPortfolio() {
                     background: "linear-gradient(90deg, #223046 60%, #3a4a63 100%)",
                     color: "#fff",
                 }}
+                className="flex flex-col bg-[#223046] md:flex-row items-center justify-between"
             >
                 <div>
                     <h1 style={{ fontSize: "2.8rem", marginBottom: "0.5rem", fontWeight: 700 }}>
-                        Reuben Okafor
+                        Reuben Chumba
                     </h1>
                     <h2 style={{ fontSize: "1.5rem", fontWeight: 400, marginBottom: "1.5rem" }}>
                         Experienced Electrical Engineer | Automation & Renewable Energy Specialist
