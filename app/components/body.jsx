@@ -39,7 +39,7 @@ export default function ElectricalEngineerPortfolio() {
   return (
     <div className="container mx-auto bg-white ">
       {/* Hero Section */}
-      <section className="bg-white lg:grid lg:h-screen lg:place-content-center">
+      <section className="bg-white flex md:flex-row  items-center justify-center lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="max-w-prose text-left">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
@@ -69,6 +69,10 @@ export default function ElectricalEngineerPortfolio() {
             </div>
           </div>
         </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80">
+            </img>
+        </div>
       </section>
 
       {/* About Section */}
@@ -76,13 +80,11 @@ export default function ElectricalEngineerPortfolio() {
   <div className="p-8 md:p-12 lg:px-16 lg:py-24">
     <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        I’m Reuben, a licensed Electrical Engineer.
       </h2>
 
       <p className="hidden text-gray-500 md:mt-4 md:block">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-        quisque ut interdum tincidunt duis.
+        I’m Reuben, a licensed Electrical Engineer with over 5 yrs of experience in designing, implementing, and managing electrical systems for residential, commercial, and industrial projects. My work focuses on safe, cost-effective, and energy-efficient solutions — always guided by engineering best practices and a passion for innovation.
       </p>
 
       <div className="mt-4 md:mt-8">
@@ -104,6 +106,7 @@ export default function ElectricalEngineerPortfolio() {
 </section>
 
       {/* Work Experience */}
+      <section className="mt-12">
       <ol
   className="relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200"
 >
@@ -170,7 +173,7 @@ export default function ElectricalEngineerPortfolio() {
     <div aria-hidden="true"></div>
   </li>
 </ol>
-
+</section>
       {/* Skills & Services */}
       <section
         id="skills"
