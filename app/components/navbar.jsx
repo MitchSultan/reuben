@@ -19,7 +19,7 @@ return (
 
             {/* Logo */}
             <div className="logo">
-                <a href="#home">MyLogo</a>
+                <a href="#home">Chumba</a>
             </div>
 
             {/* Nav Links */}
