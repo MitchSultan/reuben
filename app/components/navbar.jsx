@@ -2,6 +2,7 @@
 // Importing the hero image
 import React from 'react';
 
+
 export default function navbar() {
 const [isOpen, setIsOpen] = React.useState(false);
 
