@@ -7,8 +7,8 @@ export default function navbar() {
 const [isOpen, setIsOpen] = React.useState(false);
 
 return (
-    <nav className="navbar">
-        <div className="navbar-container">
+    <nav className=" w-full bg-blue-50 text-black">
+        <div className="navbar-container ">
             {/* Mobile Menu Button */}
             <button
                 className="menu-btn"
@@ -19,46 +19,32 @@ return (
             </button>
 
             {/* Logo */}
-            <div className="logo">
-                <a href="#home">Chumba</a>
+            <div className=" text-blue text-3xl font-bold">
+                <a href="#home"><img src='/logo/main.png' className='w-12 h-12'/></a>
             </div>
 
             {/* Nav Links */}
-            <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-                <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-                <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-                <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
-                <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <ul className={`nav-links ${isOpen ? 'open' : ''} text-black flex gap-4`} >
+                <li className='text-black'><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+                <li className='text-black'><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
+                <li className='text-black'><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
             </ul>
         </div>
         <style jsx>{`
-            .navbar {
-                width: 100%;
-                background: #222;
-                color: #fff;
-            }
+            
             .navbar-container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 0.75rem 1.5rem;
             }
-            .logo a {
-                color: #fff;
-                font-size: 1.5rem;
-                font-weight: bold;
-                text-decoration: none;
-            }
+            
             .nav-links {
                 display: flex;
                 gap: 1.5rem;
                 list-style: none;
             }
-            .nav-links li a {
-                color: #fff;
-                text-decoration: none;
-                font-size: 1rem;
-            }
+
             .menu-btn {
                 display: none;
                 background: none;

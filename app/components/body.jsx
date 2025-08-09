@@ -1,39 +1,9 @@
 "use client";
 import React from "react";
+import AboutSection from "./AboutSection";
 
-const heroImg =
-  "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=facearea&w=400&h=400&facepad=2&q=80"; // Replace with your professional photo
 
-const projects = [
-  {
-    title: "Smart Grid Automation",
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-    desc: "Designed and implemented a scalable smart grid automation system for a regional utility provider.",
-  },
-  {
-    title: "Solar Microgrid Integration",
-    img: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
-    desc: "Integrated renewable solar microgrids, increasing energy efficiency by 30%.",
-  },
-  {
-    title: "Industrial PLC Upgrade",
-    img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-    desc: "Upgraded PLC systems for a major manufacturer, reducing downtime by 25%.",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Jane Smith",
-    role: "Project Manager, GreenTech",
-    text: "Professional, reliable, and highly skilled. Delivered our automation project ahead of schedule.",
-  },
-  {
-    name: "Dr. Alan Lee",
-    role: "Colleague",
-    text: "A true expert in electrical engineering—always ready to tackle complex challenges.",
-  },
-];
+;
 
 export default function ElectricalEngineerPortfolio() {
   return (
@@ -136,9 +106,10 @@ export default function ElectricalEngineerPortfolio() {
   </div>
 </div>
 
+<AboutSection/>
 
       {/* Work Experience */}
-      <section className="mt-24 flex flex-col items-center justify-center">
+      <section className="mt-24 flex flex-col items-center justify-center" id="projects">
         <h1 className="items-center text-4xl">Projects That Spark Change</h1>
       <ol
   className="relative space-y-8 mt-12 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200"
@@ -152,11 +123,15 @@ export default function ElectricalEngineerPortfolio() {
       <div className="-mt-2">
         <time className="text-xs/none font-medium text-gray-700">12/02/2025</time>
 
-        <h3 className="text-lg font-bold text-gray-900">Smart Grid Automation</h3>
+        <h3 className="text-lg font-bold text-gray-900">Design Technician | March 2022 – Present </h3>
 
         <p className="mt-0.5 max-w-96 text-sm text-gray-700">
-          Designed and implemented a scalable smart grid automation system for a regional utility provider
-        </p>
+        Spearhead grid extension project designs, ensuring compliance with 
+REREC standards and sustainability goals expanding grid access to 
+underserved communities. 
+ Conduct energy research, site assessments and feasibility studies to 
+identify sustainable solutions for rural electrification and optimizing energy 
+distribution.  </p>
       </div>
     </div>
 
@@ -174,7 +149,7 @@ export default function ElectricalEngineerPortfolio() {
 
         <h3 className="text-lg font-bold text-gray-900">Solar Microgrid Integration</h3>
 
-        <p className="mt-0.5 text-sm text-gray-700">
+        <p className="mt-0.5 max-w-96 text-sm text-gray-700">
          Integrated renewable solar microgrids, increasing energy efficiency by 30%.
         </p>
       </div>
@@ -194,7 +169,7 @@ export default function ElectricalEngineerPortfolio() {
 
         <h3 className="text-lg font-bold text-gray-900">Industrial PLC Upgrade</h3>
 
-        <p className="mt-0.5 text-sm text-gray-700">
+        <p className="mt-0.5 max-w-96 text-sm text-gray-700">
         Upgraded PLC systems for a major manufacturer, reducing downtime by 25%.
         </p>
       </div>
@@ -290,20 +265,20 @@ export default function ElectricalEngineerPortfolio() {
           ))}
         </div>
       </section>*/ }
-       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+       <section className="relative isolate overflow-hidden bg-white px-6 mt-12 py-24 sm:py-32 lg:px-8">
+        <h1 className="text-3xl text-black text-center">What They Say?</h1>
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20" />
       <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <img
           alt=""
-          src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
-          className="mx-auto h-12"
+          src="/logo/4.png"
+          className="mx-auto h-36"
         />
         <figure className="mt-10">
           <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
             <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-              molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+              “Working with Eng.Chumba proved to be a unigue opportunity with lot's of learning opportunities..”
             </p>
           </blockquote>
           <figcaption className="mt-10">
@@ -313,11 +288,11 @@ export default function ElectricalEngineerPortfolio() {
               className="mx-auto size-10 rounded-full"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-gray-900">Judith Black</div>
+              <div className="font-semibold text-gray-900">Judith Mumbi</div>
               <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
                 <circle r={1} cx={1} cy={1} />
               </svg>
-              <div className="text-gray-600">CEO of Workcation</div>
+              <div className="text-gray-600">CTO of Vilcom</div>
             </div>
           </figcaption>
         </figure>
@@ -325,106 +300,8 @@ export default function ElectricalEngineerPortfolio() {
     </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        style={{
-          maxWidth: 900,
-          margin: "2rem auto 3rem auto",
-          background: "#f6f8fc",
-          borderRadius: 18,
-          boxShadow: "0 2px 16px #22304610",
-          padding: "2rem",
-        }}
-      >
-        <h3 style={{ color: "#4f8cff", fontWeight: 700, marginBottom: 10 }}>
-          Contact
-        </h3>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "2rem",
-            alignItems: "flex-start",
-          }}
-        >
-          <form
-            style={{
-              flex: "1 1 320px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
-            }}
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thank you for reaching out!");
-            }}
-          >
-            <input
-              type="text"
-              placeholder="Your Name"
-              required
-              style={inputStyle}
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              required
-              style={inputStyle}
-            />
-            <textarea
-              placeholder="Your Message"
-              required
-              rows={4}
-              style={{ ...inputStyle, resize: "vertical" }}
-            />
-            <button
-              type="submit"
-              style={{
-                background: "#4f8cff",
-                color: "#fff",
-                border: "none",
-                borderRadius: 24,
-                padding: "0.7rem 2rem",
-                fontWeight: 600,
-                fontSize: "1rem",
-                cursor: "pointer",
-                boxShadow: "0 2px 8px #22304633",
-                transition: "background 0.2s",
-              }}
-            >
-              Send Message
-            </button>
-          </form>
-          <div style={{ flex: "1 1 220px", fontSize: "1.07rem" }}>
-            <div style={{ marginBottom: 10 }}>
-              <strong>Email:</strong>{" "}
-              <a
-                href="mailto:reuben.okafor@email.com"
-                style={{ color: "#4f8cff" }}
-              >
-                reuben.okafor@email.com
-              </a>
-            </div>
-            <div style={{ marginBottom: 10 }}>
-              <strong>LinkedIn:</strong>{" "}
-              <a
-                href="https://linkedin.com/in/reubenokafor"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#4f8cff" }}
-              >
-                linkedin.com/in/reubenokafor
-              </a>
-            </div>
-            <div>
-              <strong>Phone:</strong>{" "}
-              <a href="tel:+2348012345678" style={{ color: "#4f8cff" }}>
-                +234 801 234 5678
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+     
+   
 
       {/* Subtle motion keyframes */}
       <style>{`
