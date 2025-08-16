@@ -20,7 +20,7 @@ stakeholder engagement to drive energy access and innovation  </p>
         <div className="mt-4 flex flex-col md:flex-row gap-2 md:mt-8">
             <a
                 href="https://wa.me/728415398"
-                className="inline-block rounded-sm bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
+                className="inline-block rounded-sm bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
             >
                 Connect Today
             </a>
@@ -37,7 +37,7 @@ stakeholder engagement to drive energy access and innovation  </p>
 
 <img
     alt=""
-    src="/images/reu2.jpg"
+    src="/images/reu3.png"
     className="h-auto  max-w-1/2 object-contain sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
 />
 </section></div>

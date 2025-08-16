@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function footer() {
 return (
-   <footer className="bg-gray-100">
+   <footer className="bg-gray-100 z-50 absolute bottom-0 w-full">
   <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
     <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
       <a
